@@ -1,0 +1,27 @@
+/* src/components/Forecast.css */
+
+.forecast {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.forecast-day {
+  flex: 1 1 calc(30% - 10px);
+  margin: 5px;
+  padding: 10px;
+  background-color: #e0f7fa;
+  border-radius: 8px;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.forecast-day:hover {
+  transform: scale(1.05);
+  background-color: #b2ebf2;
+}
+
+@media (max-width: 600px) {
+  .forecast-day {
+    flex: 1 1 100%;
+  }
+}
